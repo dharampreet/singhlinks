@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Singhlinks Cabling — Metro Vancouver's Trusted Low Voltage Specialists</title>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#151A52',
+            red: '#D02424',
+            light: '#E9E9F3',
+          },
+          fontFamily: {
+            epilogue: ['Epilogue', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer base {
+      html { scroll-behavior: smooth; }
+      body { -webkit-font-smoothing: antialiased; }
+    }
+    @layer utilities {
+      .mobile-menu.open { display: flex !important; }
+    }
+  </style>
+</head>
+<body class="font-epilogue text-navy text-lg leading-normal overflow-x-hidden">
+
+<!-- ═══════ HEADER ═══════ -->
+<header class="bg-white sticky top-0 z-50">
+  <nav class="max-w-[1300px] mx-auto px-7 py-1 flex items-center gap-8">
+    <a href="#" class="flex items-center gap-3 text-lg font-bold whitespace-nowrap shrink-0 text-navy">
+      <img src="logo/blue_cable_logo.png" alt="Singhlinks Cabling" class="h-[72px] w-auto" />
+      Singhlinks Cabling
+    </a>
+
+    <ul class="hidden lg:flex gap-7 list-none mx-auto">
+      <li><a href="#services" class="text-sm font-medium text-navy/70 hover:text-navy transition-colors">Services</a></li>
+      <li><a href="#why" class="text-sm font-medium text-navy/70 hover:text-navy transition-colors">About</a></li>
+      <li><a href="#work" class="text-sm font-medium text-navy/70 hover:text-navy transition-colors">Our Work</a></li>
+      <li><a href="#contact" class="text-sm font-medium text-navy/70 hover:text-navy transition-colors">Contact</a></li>
+    </ul>
+
+    <div class="hidden lg:flex gap-2.5 items-center shrink-0">
+      <a href="tel:3659986868" class="px-5 py-2.5 text-[13px] font-bold text-navy border-2 border-navy/30 rounded hover:border-navy transition-colors">365-998-6868</a>
+      <a href="#contact" class="px-5 py-2.5 text-[13px] font-bold bg-red text-white rounded hover:opacity-85 transition-opacity">Free Quote</a>
+    </div>
+
+    <button class="lg:hidden flex flex-col gap-[5px] ml-auto p-1" id="hamburger" aria-label="Open menu">
+      <span class="block w-6 h-[2.5px] bg-navy rounded-sm"></span>
+      <span class="block w-6 h-[2.5px] bg-navy rounded-sm"></span>
+      <span class="block w-6 h-[2.5px] bg-navy rounded-sm"></span>
+    </button>
+  </nav>
+
+  <div class="hidden flex-col bg-navy border-t border-white/10 mobile-menu" id="mobile-menu">
+    <a href="#services" class="px-7 py-3.5 text-[15px] font-medium text-white/80 border-b border-white/10 block">Services</a>
+    <a href="#why" class="px-7 py-3.5 text-[15px] font-medium text-white/80 border-b border-white/10 block">About</a>
+    <a href="#work" class="px-7 py-3.5 text-[15px] font-medium text-white/80 border-b border-white/10 block">Our Work</a>
+    <a href="#contact" class="px-7 py-3.5 text-[15px] font-medium text-white/80 border-b border-white/10 block">Contact</a>
+    <a href="tel:3659986868" class="px-7 py-3.5 text-[15px] font-medium text-white/80 border-b border-white/10 block">Call: 365-998-6868</a>
+    <a href="#contact" class="px-7 py-3.5 text-[15px] font-bold text-red border-b border-white/10 block">Free Quote</a>
+  </div>
+</header>
+
+
+<!-- ═══════ HERO ═══════ -->
+<section class="relative text-center text-white overflow-hidden">
+  <!-- Flow Field Background -->
+  <div class="absolute inset-0 bg-navy overflow-hidden" id="canvas-container">
+    <canvas id="neural-canvas" class="block w-full h-full"></canvas>
+  </div>
+  <div class="absolute inset-0 bg-navy/50"></div>
+
+  <div class="relative z-10 px-6 pt-24 pb-0">
+    <p class="text-[15px] font-medium text-white/75 mb-5">Surrey, BC &mdash; Serving Metro Vancouver, Fraser Valley, Vancouver Island &amp; Whistler</p>
+    <h1 class="text-[clamp(32px,5vw,56px)] font-bold leading-[1.12] max-w-[820px] mx-auto mb-4">Metro Vancouver's Trusted<br>Low Voltage Specialists</h1>
+    <p class="text-[17px] text-white/80 max-w-[680px] mx-auto mb-8 leading-relaxed">Singhlinks Cabling is a low voltage and structured cabling company with over 6 years of hands-on field experience. Clean installs, on-time delivery, and zero callbacks.</p>
+
+    <div class="flex gap-4 justify-center flex-wrap mb-20">
+      <a href="#contact" class="inline-block px-8 py-3.5 bg-red text-white text-[15px] font-bold rounded hover:opacity-85 transition-all hover:-translate-y-0.5">Get a Free Quote &rarr;</a>
+      <a href="tel:3659986868" class="inline-flex items-center gap-2 text-[15px] font-bold text-white">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.69 2.36a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.76.33 1.55.56 2.36.69A2 2 0 0 1 22 16.92z"/></svg>
+        365-998-6868
+      </a>
+    </div>
+
+    <!-- Feature cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 max-w-[1100px] mx-auto">
+      <div class="bg-gradient-to-br from-[#f5a623] to-[#e05a0a] rounded-[14px] p-6 text-left text-white">
+        <div class="w-[50px] h-[50px] bg-white/20 rounded-full flex items-center justify-center mb-4">
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="white"><path d="M2 12h4l3-9 4 18 3-9h6"/></svg>
+        </div>
+        <h3 class="text-base font-bold mb-2">Structured Cabling</h3>
+        <p class="text-[13px] opacity-90 leading-snug">Cat5e, Cat6 &amp; Cat6A installation for commercial and residential projects of any scale.</p>
+      </div>
+      <div class="bg-gradient-to-br from-[#f5a623] to-[#e05a0a] rounded-[14px] p-6 text-left text-white">
+        <div class="w-[50px] h-[50px] bg-white/20 rounded-full flex items-center justify-center mb-4">
+          <svg class="w-6 h-6" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="white" stroke-width="2" fill="none"/><circle cx="12" cy="12" r="4" stroke="white" stroke-width="2" fill="none"/><circle cx="12" cy="12" r="1.5" fill="white"/></svg>
+        </div>
+        <h3 class="text-base font-bold mb-2">Fiber Optic</h3>
+        <p class="text-[13px] opacity-90 leading-snug">Installation, termination &amp; fusion splicing for single mode and multimode fiber.</p>
+      </div>
+      <div class="bg-gradient-to-br from-[#f5a623] to-[#e05a0a] rounded-[14px] p-6 text-left text-white">
+        <div class="w-[50px] h-[50px] bg-white/20 rounded-full flex items-center justify-center mb-4">
+          <svg class="w-6 h-6" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" stroke="white" stroke-width="2" fill="none"/><circle cx="12" cy="13" r="4" stroke="white" stroke-width="2" fill="none"/></svg>
+        </div>
+        <h3 class="text-base font-bold mb-2">CCTV &amp; Security</h3>
+        <p class="text-[13px] opacity-90 leading-snug">IP security camera systems and access control for total site protection.</p>
+      </div>
+      <div class="bg-gradient-to-br from-[#f5a623] to-[#e05a0a] rounded-[14px] p-6 text-left text-white">
+        <div class="w-[50px] h-[50px] bg-white/20 rounded-full flex items-center justify-center mb-4">
+          <svg class="w-6 h-6" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="10" stroke="white" stroke-width="2" fill="none"/></svg>
+        </div>
+        <h3 class="text-base font-bold mb-2">Tested &amp; Documented</h3>
+        <p class="text-[13px] opacity-90 leading-snug">Every install is tested with professional-grade equipment and documented with full test reports.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════ RED BANNER ═══════ -->
+<section class="bg-red text-white py-16 px-6 text-center">
+  <div class="max-w-[1160px] mx-auto">
+    <h2 class="text-[clamp(22px,3vw,32px)] font-bold mb-3">Professional Cabling You Can Count On</h2>
+    <p class="text-[17px] opacity-[.88] max-w-[560px] mx-auto mb-10">Trusted by industry-leading companies across Metro Vancouver for clean, certified installations.</p>
+    <div class="flex justify-center items-center gap-5 flex-wrap">
+      <span class="px-5 py-2.5 border border-white/40 rounded text-[13px] font-bold tracking-wide">Fully Insured</span>
+      <span class="px-5 py-2.5 border border-white/40 rounded text-[13px] font-bold tracking-wide">WCB Covered</span>
+      <span class="px-5 py-2.5 border border-white/40 rounded text-[13px] font-bold tracking-wide">6+ Years Experience</span>
+      <span class="px-5 py-2.5 border border-white/40 rounded text-[13px] font-bold tracking-wide">Test Reports on Every Install</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════ SERVICES ═══════ -->
+<section class="py-20 px-6" id="services">
+  <div class="max-w-[1160px] mx-auto">
+    <div class="text-center mb-14">
+      <p class="text-[13px] font-bold tracking-[1.5px] uppercase text-red mb-2.5">Our Services</p>
+      <h2 class="text-[clamp(26px,3vw,38px)] font-bold leading-tight mb-4">Full-Spectrum Low Voltage Solutions</h2>
+      <p class="text-[17px] text-gray-500 max-w-[600px] mx-auto">From structured cabling to complete security systems — we handle every aspect of your low voltage infrastructure.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-[960px] mx-auto">
+
+      <div class="border-[1.5px] border-light rounded-[14px] p-8 relative hover:shadow-lg transition-shadow">
+        <h3 class="text-xl font-bold mb-2.5">Structured Cabling</h3>
+        <p class="text-sm text-gray-500 leading-relaxed mb-5">Cat5e, Cat6, and Cat6A installations for offices, warehouses, and new construction. Clean cable management and labelling on every job.</p>
+        <a href="#contact" class="inline-block bg-red text-white px-6 py-2 rounded text-[13px] font-bold hover:opacity-85 transition-opacity">Get a Quote</a>
+      </div>
+
+      <div class="border-[1.5px] border-light rounded-[14px] p-8 relative hover:shadow-lg transition-shadow">
+        <h3 class="text-xl font-bold mb-2.5">Fiber Optic Installation</h3>
+        <p class="text-sm text-gray-500 leading-relaxed mb-5">End-to-end fiber optic services including installation, termination, and fusion splicing for single mode and multimode applications.</p>
+        <a href="#contact" class="inline-block bg-red text-white px-6 py-2 rounded text-[13px] font-bold hover:opacity-85 transition-opacity">Get a Quote</a>
+      </div>
+
+      <div class="border-[1.5px] border-light rounded-[14px] p-8 relative hover:shadow-lg transition-shadow">
+        <h3 class="text-xl font-bold mb-2.5">CCTV &amp; IP Security Cameras</h3>
+        <p class="text-sm text-gray-500 leading-relaxed mb-5">Design and installation of IP security camera systems to protect your commercial or residential property with complete coverage.</p>
+        <a href="#contact" class="inline-block bg-red text-white px-6 py-2 rounded text-[13px] font-bold hover:opacity-85 transition-opacity">Get a Quote</a>
+      </div>
+
+      <div class="border-[1.5px] border-light rounded-[14px] p-8 relative hover:shadow-lg transition-shadow">
+        <h3 class="text-xl font-bold mb-2.5">Access Control Systems</h3>
+        <p class="text-sm text-gray-500 leading-relaxed mb-5">Card readers, fob systems, and electronic locks — integrated access control for buildings, offices, and restricted areas.</p>
+        <a href="#contact" class="inline-block bg-red text-white px-6 py-2 rounded text-[13px] font-bold hover:opacity-85 transition-opacity">Get a Quote</a>
+      </div>
+
+      <div class="border-[1.5px] border-light rounded-[14px] p-8 relative hover:shadow-lg transition-shadow">
+        <h3 class="text-xl font-bold mb-2.5">AV &amp; Meeting Room Systems</h3>
+        <p class="text-sm text-gray-500 leading-relaxed mb-5">Audio-visual installations for boardrooms and conference spaces — displays, speakers, cabling, and connectivity all set up for you.</p>
+        <a href="#contact" class="inline-block bg-red text-white px-6 py-2 rounded text-[13px] font-bold hover:opacity-85 transition-opacity">Get a Quote</a>
+      </div>
+
+      <div class="border-[1.5px] border-light rounded-[14px] p-8 relative hover:shadow-lg transition-shadow">
+        <h3 class="text-xl font-bold mb-2.5">Rack &amp; Stack</h3>
+        <p class="text-sm text-gray-500 leading-relaxed mb-5">Server room and data center setup — equipment mounting, patch panel termination, cable management, and full documentation.</p>
+        <a href="#contact" class="inline-block bg-red text-white px-6 py-2 rounded text-[13px] font-bold hover:opacity-85 transition-opacity">Get a Quote</a>
+      </div>
+
+      <div class="border-[1.5px] border-light rounded-[14px] p-8 relative hover:shadow-lg transition-shadow md:col-span-2 md:max-w-[480px] md:justify-self-center">
+        <h3 class="text-xl font-bold mb-2.5">Cable Testing &amp; Documentation</h3>
+        <p class="text-sm text-gray-500 leading-relaxed mb-5">Every install is tested with professional-grade equipment. Full test reports provided — we don't leave until the job passes.</p>
+        <a href="#contact" class="inline-block bg-red text-white px-6 py-2 rounded text-[13px] font-bold hover:opacity-85 transition-opacity">Get a Quote</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════ WHY CHOOSE US ═══════ -->
+<section class="py-20 px-6 bg-light" id="why">
+  <div class="max-w-[1100px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-12 lg:gap-[72px] items-start">
+
+    <div>
+      <p class="text-[13px] font-bold tracking-[1.5px] uppercase text-red mb-2.5">About Us</p>
+      <h2 class="text-[clamp(26px,3vw,38px)] font-bold leading-tight mb-5">Why Choose Singhlinks Cabling?</h2>
+      <p class="text-[15px] text-gray-600 leading-relaxed">With 6+ years of hands-on field experience completing structured cabling on major commercial job sites across Metro Vancouver, we deliver clean installs, on-time completion, and zero callbacks — without the overhead of a large contractor.<br><br>We operate as a small, dedicated crew — meaning you deal directly with the owner on every job, communication is fast, and quality is never delegated.</p>
+    </div>
+
+    <div class="flex flex-col gap-6">
+
+      <div class="flex gap-4 items-start">
+        <div class="shrink-0 w-[42px] h-[42px] bg-red rounded-full flex items-center justify-center text-white text-[17px] mt-0.5">&#9733;</div>
+        <div>
+          <h3 class="text-base font-bold mb-1">Certified &amp; Experienced</h3>
+          <p class="text-[13px] text-gray-500 leading-relaxed">6+ years of hands-on field experience across commercial and residential projects.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-4 items-start">
+        <div class="shrink-0 w-[42px] h-[42px] bg-red rounded-full flex items-center justify-center text-white text-[17px] mt-0.5">&#9733;</div>
+        <div>
+          <h3 class="text-base font-bold mb-1">Fully Insured &amp; WCB Covered</h3>
+          <p class="text-[13px] text-gray-500 leading-relaxed">Zero liability headache for prime contractors — full insurance and WCB coverage on every job.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-4 items-start">
+        <div class="shrink-0 w-[42px] h-[42px] bg-red rounded-full flex items-center justify-center text-white text-[17px] mt-0.5">&#9733;</div>
+        <div>
+          <h3 class="text-base font-bold mb-1">Tested &amp; Fully Documented</h3>
+          <p class="text-[13px] text-gray-500 leading-relaxed">Every install is tested with professional-grade equipment and backed by full test reports — we don't leave until the job passes.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-4 items-start">
+        <div class="shrink-0 w-[42px] h-[42px] bg-red rounded-full flex items-center justify-center text-white text-[17px] mt-0.5">&#9733;</div>
+        <div>
+          <h3 class="text-base font-bold mb-1">Fiber Fusion Splicing</h3>
+          <p class="text-[13px] text-gray-500 leading-relaxed">In-house capability for both single mode and multimode fiber fusion splicing.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-4 items-start">
+        <div class="shrink-0 w-[42px] h-[42px] bg-red rounded-full flex items-center justify-center text-white text-[17px] mt-0.5">&#9733;</div>
+        <div>
+          <h3 class="text-base font-bold mb-1">Owner on Every Job</h3>
+          <p class="text-[13px] text-gray-500 leading-relaxed">You deal directly with the person doing the work — no middlemen, no surprises, consistent quality every time.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-4 items-start">
+        <div class="shrink-0 w-[42px] h-[42px] bg-red rounded-full flex items-center justify-center text-white text-[17px] mt-0.5">&#9733;</div>
+        <div>
+          <h3 class="text-base font-bold mb-1">Available When You Need Us</h3>
+          <p class="text-[13px] text-gray-500 leading-relaxed">Short notice, out of town, and after-hours work — we're ready when you are.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════ SERVICE AREA ═══════ -->
+<section class="py-16 px-6 text-center">
+  <div class="max-w-[1160px] mx-auto">
+    <p class="text-[13px] font-bold tracking-[1.5px] uppercase text-red mb-2.5">Service Area</p>
+    <h2 class="text-[clamp(26px,3vw,38px)] font-bold leading-tight mb-8">Serving Metro Vancouver, Fraser Valley, Vancouver Island, Whistler &amp; Beyond</h2>
+    <div class="flex justify-center items-center gap-7 md:gap-12 flex-wrap">
+      <span class="text-[22px] font-bold text-navy opacity-55 tracking-wide">Surrey</span>
+      <span class="text-[22px] font-bold text-navy opacity-55 tracking-wide">Vancouver</span>
+      <span class="text-[22px] font-bold text-navy opacity-55 tracking-wide">Burnaby</span>
+      <span class="text-[22px] font-bold text-navy opacity-55 tracking-wide">Richmond</span>
+      <span class="text-[22px] font-bold text-navy opacity-55 tracking-wide">Langley</span>
+      <span class="text-[22px] font-bold text-navy opacity-55 tracking-wide">Abbotsford</span>
+      <span class="text-[22px] font-bold text-navy opacity-55 tracking-wide">Chilliwack</span>
+      <span class="text-[22px] font-bold text-navy opacity-55 tracking-wide">Victoria</span>
+      <span class="text-[22px] font-bold text-navy opacity-55 tracking-wide">Nanaimo</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════ WORK PHOTOS ═══════ -->
+<section class="py-20 px-6 bg-light" id="work">
+  <div class="max-w-[1100px] mx-auto">
+    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-8 mb-12">
+      <div>
+        <p class="text-[13px] font-bold tracking-[1.5px] uppercase text-red mb-2.5">Our Work</p>
+        <h2 class="text-[clamp(26px,3vw,38px)] font-bold leading-tight">Projects That<br>Speak For Themselves</h2>
+      </div>
+      <p class="text-[15px] text-gray-500 sm:text-right">Clean installs, organized cable management,<br>certified results.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+      <div class="bg-white rounded-xl overflow-hidden shadow-md">
+        <img src="photos/Work Photos - Dharampreet _1.jpg" alt="Server rack cabling" class="w-full aspect-[4/3] object-cover" />
+      </div>
+
+      <div class="bg-white rounded-xl overflow-hidden shadow-md">
+        <img src="photos/Work Photos - Dharampreet _2.jpg" alt="Structured cabling patch panel" class="w-full aspect-[4/3] object-cover" />
+      </div>
+
+      <div class="bg-white rounded-xl overflow-hidden shadow-md">
+        <img src="photos/Work Photos - Dharampreet _13.jpg" alt="Access switch rack and stack" class="w-full aspect-[4/3] object-cover" />
+      </div>
+
+      <div class="bg-white rounded-xl overflow-hidden shadow-md">
+        <img src="photos/Work Photos - Dharampreet _12.jpg" alt="CCTV security cameras" class="w-full aspect-[4/3] object-cover" />
+      </div>
+
+      <div class="bg-white rounded-xl overflow-hidden shadow-md">
+        <img src="photos/Work Photos - Dharampreet _9.jpg" alt="Rooftop wireless access point" class="w-full aspect-[4/3] object-cover" />
+      </div>
+
+      <div class="bg-white rounded-xl overflow-hidden shadow-md">
+        <img src="photos/Work Photos - Dharampreet _10.jpg" alt="AV meeting room setup" class="w-full aspect-[4/3] object-cover" />
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════ CONTACT ═══════ -->
+<section class="py-20 px-6" id="contact">
+  <div class="max-w-[1000px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
+
+    <div class="flex flex-col gap-6">
+      <div>
+        <p class="text-[13px] font-bold tracking-[1.5px] uppercase text-red mb-2.5">Get In Touch</p>
+        <h2 class="text-[clamp(26px,3vw,38px)] font-bold leading-tight">Let's Talk About Your Project</h2>
+      </div>
+      <p class="text-[15px] text-gray-500 leading-relaxed">Whether you need a quote for a new build, a cable certification, or a full-scale rollout — reach out and we'll get back to you fast.</p>
+
+      <div class="flex gap-3.5 items-center text-base font-medium">
+        <svg class="shrink-0 w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="#151A52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.69 2.36a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.76.33 1.55.56 2.36.69A2 2 0 0 1 22 16.92z"/></svg>
+        <a href="tel:3659986868" class="no-underline text-navy">365-998-6868</a>
+      </div>
+
+      <div class="flex gap-3.5 items-center text-base font-medium">
+        <svg class="shrink-0 w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="#151A52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <a href="mailto:dharampreet.6868@gmail.com" class="no-underline text-navy">dharampreet.6868@gmail.com</a>
+      </div>
+
+      <div class="flex gap-3.5 items-center text-base font-medium">
+        <svg class="shrink-0 w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="#151A52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Surrey, BC &mdash; Metro Vancouver, Fraser Valley, Vancouver Island &amp; Whistler</span>
+      </div>
+    </div>
+
+    <form id="contact-form" class="flex flex-col gap-4" onsubmit="handleSubmit(event)">
+      <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-3.5 border-[1.5px] border-light rounded-lg font-epilogue text-[15px] text-navy outline-none focus:border-navy transition-colors" />
+      <input type="email" name="email" placeholder="Your Email" required class="w-full px-4 py-3.5 border-[1.5px] border-light rounded-lg font-epilogue text-[15px] text-navy outline-none focus:border-navy transition-colors" />
+      <input type="tel" name="phone" placeholder="Your Phone Number" class="w-full px-4 py-3.5 border-[1.5px] border-light rounded-lg font-epilogue text-[15px] text-navy outline-none focus:border-navy transition-colors" />
+      <textarea name="message" placeholder="Tell us about your project..." rows="5" required class="w-full px-4 py-3.5 border-[1.5px] border-light rounded-lg font-epilogue text-[15px] text-navy outline-none focus:border-navy transition-colors resize-y min-h-[120px]"></textarea>
+      <button type="submit" class="w-full px-8 py-3.5 bg-red text-white text-[15px] font-bold rounded cursor-pointer hover:opacity-85 transition-opacity">Send Message</button>
+      <p id="form-success" class="hidden text-center text-[15px] font-medium text-green-600">Thank you! We'll get back to you shortly.</p>
+    </form>
+
+  </div>
+</section>
+
+
+<!-- ═══════ FOOTER ═══════ -->
+<footer class="bg-navy text-white pt-14 pb-7 px-6">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr] gap-12 max-w-[1100px] mx-auto mb-11">
+
+    <div>
+      <div class="flex items-center gap-2.5 text-[17px] font-bold mb-3.5">
+        <div class="bg-white rounded-lg p-1 inline-flex">
+          <img src="logo/blue_cable_logo.png" alt="Singhlinks Cabling" class="h-[40px] w-auto" />
+        </div>
+        Singhlinks Cabling
+      </div>
+      <p class="text-[13px] opacity-60 leading-relaxed">Metro Vancouver's trusted low voltage specialists. Clean installs, certified testing, and zero callbacks on every project.</p>
+    </div>
+
+    <div>
+      <h4 class="text-sm font-bold mb-4">Services</h4>
+      <ul class="list-none flex flex-col gap-2.5">
+        <li><a href="#services" class="text-[13px] opacity-60 hover:opacity-100 transition-opacity no-underline text-white">Structured Cabling</a></li>
+        <li><a href="#services" class="text-[13px] opacity-60 hover:opacity-100 transition-opacity no-underline text-white">Fiber Optic</a></li>
+        <li><a href="#services" class="text-[13px] opacity-60 hover:opacity-100 transition-opacity no-underline text-white">CCTV &amp; Security</a></li>
+        <li><a href="#services" class="text-[13px] opacity-60 hover:opacity-100 transition-opacity no-underline text-white">Access Control</a></li>
+        <li><a href="#services" class="text-[13px] opacity-60 hover:opacity-100 transition-opacity no-underline text-white">AV Systems</a></li>
+        <li><a href="#services" class="text-[13px] opacity-60 hover:opacity-100 transition-opacity no-underline text-white">Rack &amp; Stack</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="text-sm font-bold mb-4">Company</h4>
+      <ul class="list-none flex flex-col gap-2.5">
+        <li><a href="#why" class="text-[13px] opacity-60 hover:opacity-100 transition-opacity no-underline text-white">About Us</a></li>
+        <li><a href="#work" class="text-[13px] opacity-60 hover:opacity-100 transition-opacity no-underline text-white">Our Work</a></li>
+        <li><a href="#contact" class="text-[13px] opacity-60 hover:opacity-100 transition-opacity no-underline text-white">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="text-sm font-bold mb-4">Contact</h4>
+      <ul class="list-none flex flex-col gap-2.5">
+        <li><a href="tel:3659986868" class="text-[13px] opacity-60 hover:opacity-100 transition-opacity no-underline text-white">365-998-6868</a></li>
+        <li><a href="mailto:dharampreet.6868@gmail.com" class="text-[13px] opacity-60 hover:opacity-100 transition-opacity no-underline text-white">dharampreet.6868@gmail.com</a></li>
+        <li><span class="text-[13px] opacity-60">Surrey, BC</span></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <hr class="border-white/10 max-w-[1100px] mx-auto mb-6" />
+
+  <div class="max-w-[1100px] mx-auto flex flex-col sm:flex-row justify-between text-xs opacity-50 gap-2">
+    <span>&copy; 2026 Singhlinks Cabling. All rights reserved.</span>
+    <span>Surrey, BC &mdash; Metro Vancouver, Fraser Valley, Vancouver Island &amp; Whistler</span>
+  </div>
+</footer>
+
+
+<!-- ═══════ JS ═══════ -->
+<script>
+  const hamburger  = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  hamburger.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+  mobileMenu.querySelectorAll('a').forEach(a =>
+    a.addEventListener('click', () => mobileMenu.classList.remove('open'))
+  );
+
+  // Flow field particle background
+  document.addEventListener("DOMContentLoaded", () => {
+    const canvas = document.getElementById("neural-canvas");
+    const container = document.getElementById("canvas-container");
+    if (!canvas || !container) return;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+    const color = "#D02424";
+    const trailOpacity = 0.1;
+    let particleCount = window.innerWidth < 768 ? 150 : 300;
+    const speed = 0.8;
+    let width = container.clientWidth;
+    let height = container.clientHeight;
+    let particles = [];
+    let animationFrameId;
+    let mouse = { x: -1000, y: -1000 };
+    class Particle {
+      constructor() { this.reset(); this.age = Math.random() * 200; }
+      update() {
+        const angle = (Math.cos(this.x * 0.005) + Math.sin(this.y * 0.005)) * Math.PI;
+        this.vx += Math.cos(angle) * 0.2 * speed;
+        this.vy += Math.sin(angle) * 0.2 * speed;
+        const dx = mouse.x - this.x, dy = mouse.y - this.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < 150) { const f = (150 - dist) / 150; this.vx -= dx * f * 0.05; this.vy -= dy * f * 0.05; }
+        this.x += this.vx; this.y += this.vy;
+        this.vx *= 0.95; this.vy *= 0.95;
+        this.age++;
+        if (this.age > this.life) this.reset();
+        if (this.x < 0) this.x = width; if (this.x > width) this.x = 0;
+        if (this.y < 0) this.y = height; if (this.y > height) this.y = 0;
+      }
+      reset() { this.x = Math.random() * width; this.y = Math.random() * height; this.vx = 0; this.vy = 0; this.age = 0; this.life = Math.random() * 200 + 100; }
+      draw(c) { const alpha = 1 - Math.abs((this.age / this.life) - 0.5) * 2; c.globalAlpha = Math.max(0, alpha); c.fillStyle = color; c.fillRect(this.x, this.y, 1.5, 1.5); }
+    }
+    const init = () => {
+      const dpr = window.devicePixelRatio || 1;
+      canvas.width = width * dpr; canvas.height = height * dpr;
+      ctx.setTransform(1,0,0,1,0,0); ctx.scale(dpr, dpr);
+      canvas.style.width = `${width}px`; canvas.style.height = `${height}px`;
+      particles = [];
+      for (let i = 0; i < particleCount; i++) particles.push(new Particle());
+    };
+    const animate = () => {
+      ctx.fillStyle = `rgba(21, 26, 82, ${trailOpacity})`;
+      ctx.fillRect(0, 0, width, height);
+      particles.forEach(p => { p.update(); p.draw(ctx); });
+      animationFrameId = requestAnimationFrame(animate);
+    };
+    window.addEventListener("resize", () => { width = container.clientWidth; height = container.clientHeight; particleCount = window.innerWidth < 768 ? 150 : 300; init(); });
+    container.addEventListener("mousemove", e => { const r = canvas.getBoundingClientRect(); mouse.x = e.clientX - r.left; mouse.y = e.clientY - r.top; });
+    container.addEventListener("mouseleave", () => { mouse.x = -1000; mouse.y = -1000; });
+    init(); animate();
+  });
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    const form = e.target;
+    const btn = form.querySelector('button[type="submit"]');
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+    const res = await fetch('https://formspree.io/f/xaqlnpzv', {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    });
+    if (res.ok) {
+      form.reset();
+      document.getElementById('form-success').classList.remove('hidden');
+      btn.classList.add('hidden');
+    } else {
+      btn.disabled = false;
+      btn.textContent = 'Send Message';
+      alert('Something went wrong. Please try again or email us directly.');
+    }
+  }
+</script>
+
+</body>
+</html>
